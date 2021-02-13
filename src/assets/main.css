@@ -21,6 +21,42 @@ body{
 .btn-theme:hover{
     background-color: var(--primary-hover-color) !important;
 }
+.material-icons{
+  color: var(--icon-color) !important;
+}
+.icon__btn{
+  cursor: pointer;
+  text-align: center;
+}
+.icon__btn:hover{
+  /* height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: var(--icon-hover);
+  align-items: center; */
+  color: var(--primary-color) !important;
+  font-weight: bold;
+}
+.form__container {
+  padding: 1rem;
+}
+.text-theme{
+  color: var(--primary-color) !important;
+}
+.pointer{
+  cursor: pointer;
+}
+.btn-circle-icon{
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 60%;
+  display: flex;
+  align-items: center;
+}
+.btn-circle-icon:focus{
+  outline: none;
+}
 
 
 .input__group {

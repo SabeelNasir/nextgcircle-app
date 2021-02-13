@@ -4,9 +4,11 @@
     --secondary-color: #ffe8d1;
     --danger-color: #f5365c !important;
     --light-dark: #2a3042;
-    --light-hover: #d6d6d6;
+    --light-hover: #e4e6eb;
+    --divider-color: #d6d6d6;
     --icon-color: #b0b0b0;
     --dark-color: #303030;
+    --icon-hover: #e4e6eb;
 
   }
   

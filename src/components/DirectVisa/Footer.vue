@@ -1,11 +1,11 @@
 <template>
-  <footer class="footer shadow">
+  <footer class="footer shadow ">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-6">
         <div class="footer__tabs">
           <div
             class="footer__tabs-tab"
-            :class="{'footer__tabs-tab--active' : activeTab == 0}"
+            :class="{ 'footer__tabs-tab--active': activeTab == 0 }"
             @click="activeTab = 0"
           >
             <i class="material-icons">search</i>
@@ -13,7 +13,7 @@
           </div>
           <div
             class="footer__tabs-tab"
-            :class="{'footer__tabs-tab--active' : activeTab == 1}"
+            :class="{ 'footer__tabs-tab--active': activeTab == 1 }"
             @click="activeTab = 1"
           >
             <i class="material-icons">translate</i>
@@ -21,7 +21,7 @@
           </div>
           <div
             class="footer__tabs-tab"
-            :class="{'footer__tabs-tab--active' : activeTab == 2}"
+            :class="{ 'footer__tabs-tab--active': activeTab == 2 }"
             @click="activeTab = 2"
           >
             <i class="material-icons">list</i>
@@ -29,7 +29,7 @@
           </div>
           <div
             class="footer__tabs-tab"
-            :class="{'footer__tabs-tab--active' : activeTab == 3}"
+            :class="{ 'footer__tabs-tab--active': activeTab == 3 }"
             @click="activeTab = 3"
           >
             <i class="material-icons">more_horiz</i>
@@ -57,14 +57,14 @@ export default {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 80px;
   background-color: white;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 @media (max-width: 650px) {
   .footer {
-    height: 80px !important;
+    height: 70px !important;
   }
 }
 .footer__tabs {
@@ -77,7 +77,7 @@ export default {
   flex-direction: column;
   margin-right: 1rem;
   text-align: center;
-  padding: 1rem;
+  padding: .4rem;
 }
 .footer__tabs-tab:hover i {
   color: var(--primary-color) !important;

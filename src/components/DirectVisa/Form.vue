@@ -4,11 +4,15 @@
       <div class="way__options">
         <div
           class="way__options-option"
-          v-for="(item,index) in wayOptions"
+          v-for="(item, index) in wayOptions"
           :key="index"
-          :class="{'way__options-option--active':item.value == model.wayOption}"
+          :class="{
+            'way__options-option--active': item.value == model.wayOption,
+          }"
           @click="model.wayOption = item.value"
-        >{{item.label}}</div>
+        >
+          {{ item.label }}
+        </div>
       </div>
     </div>
     <div class="form-group">
@@ -19,7 +23,7 @@
               <div class="input__group">
                 <i class="material-icons">location_on</i>
                 <div class="material__input">
-                  <input type="text" required v-model="model.city"/>
+                  <input type="text" required v-model="model.city" />
                   <label>City</label>
                 </div>
               </div>
@@ -28,7 +32,7 @@
               <div class="input__group">
                 <i class="material-icons">location_on</i>
                 <div class="material__input">
-                  <input type="text" required v-model="model.airport"/>
+                  <input type="text" required v-model="model.airport" />
                   <label>Airport</label>
                 </div>
               </div>
@@ -75,7 +79,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="form-group">
       <div class="row">
         <div class="col-12 col-lg-6">
@@ -90,7 +94,11 @@
     <div class="form-group">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-6">
-          <button class="btn btn-theme">
+          <button
+            class="btn btn-theme"
+            type="button"
+            @click="$router.push({ path: '/passengers/new' })"
+          >
             <div class="d-flex align-items-center p-1">
               <i class="material-icons">search</i>
               Search for flights
@@ -121,7 +129,7 @@ export default {
 
 <style scoped>
 .form__container {
-  padding: 1rem;
+  margin-bottom: 100px;
 }
 .way__options {
   display: flex;
